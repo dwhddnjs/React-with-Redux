@@ -6,10 +6,10 @@ export const setDiff = (diff) => ({ type: SET_DIFF, diff });
 export const increase = () => ({ type: INCREASE });
 export const decrease = () => ({ type: DECREASE });
 
-const initialState = () => ({
+const initialState = {
   number: 0,
   diff: 1,
-});
+};
 
 export default function counter(state = initialState, action) {
   switch (action.type) {

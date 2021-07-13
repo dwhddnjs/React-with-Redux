@@ -61,7 +61,6 @@ console.log(store.getState());
 
 const listener = () => {
   const state = store.getState();
-  console.log(state);
 };
 
 const unsubscribe = store.subscribe(listener);
