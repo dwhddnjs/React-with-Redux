@@ -65,9 +65,4 @@ const listener = () => {
 
 const unsubscribe = store.subscribe(listener);
 
-store.dispatch(increase());
-store.dispatch(decrease());
-store.dispatch(changeText("안녕하세요"));
-store.dispatch(addToList({ id: 1, text: "ㅎㅎ" }));
-
 window.store = store;
